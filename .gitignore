@@ -1,16 +1,40 @@
-# Byte-compiled / optimized / DLL files
+# Ignore dataset files
+Dataset/
+
+# Ignore model files
+*.h5
+*/models/
+*/*/models/
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS specific
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
 *.so
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -20,7 +44,6 @@ parts/
 sdist/
 var/
 wheels/
-*.egg-info/
 .installed.cfg
 *.egg
 
@@ -36,9 +59,6 @@ deepfake_env/
 # VS Code files
 .vscode/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
 # Logs
 *.log
 
@@ -46,11 +66,9 @@ deepfake_env/
 .env
 
 # OS specific files
-.DS_Store
 Thumbs.db
 
 # Large files
-*.h5
 *.model
 *.weights
 
